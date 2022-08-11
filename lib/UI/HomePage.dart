@@ -438,7 +438,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
-                                                "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
+                                                "Although I'm currently Working as a Flutter Developer \nbut Currently I am looking for Job Transition in \nData Science",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white
@@ -503,7 +503,7 @@ class _HomePageState extends State<HomePage> {
                                     //       100,
                                     //   //color: Colors.white,
                                     //   child: Text(
-                                    //     "Designed & Built by Tushar Nikam 💙 Flutter",
+                                    //     "Designed & Built by Manish Rajput 💙 Flutter",
                                     //     style: TextStyle(
                                     //       color: Colors.white.withOpacity(0.4),
                                     //       letterSpacing: 1.75,

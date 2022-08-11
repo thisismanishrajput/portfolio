@@ -20,7 +20,7 @@ class WorkCustomData extends StatelessWidget {
         Text(
           title!,
           style: TextStyle(
-            fontSize: 22.0,
+            fontSize: 20.0,
             color: Color(0xffCCD6F6),
             fontWeight: FontWeight.w700,
           ),

@@ -55,6 +55,7 @@ class _WorkState extends State<Work> {
               const CircleAvatar(
                 backgroundColor: Colors.pink,
                 child: Icon(Icons.work),
+
               ),
               SizedBox(width: size.width*0.02,),
               Container(
