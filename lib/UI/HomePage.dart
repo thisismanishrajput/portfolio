@@ -142,11 +142,13 @@ class _HomePageState extends State<HomePage> {
                               color: Color(0xff0A192F),
                               borderRadius: BorderRadius.circular(6.0),
                             ),
-                            child: FlatButton(
-                              hoverColor: Color(0xFF3E0449),
-                              onPressed: () {
+                            child: InkWell(
+                              hoverColor:
+                              Color(0xff64FFDA).withOpacity(0.2),
+                              onTap: (){
                                 method.launchURL(
                                     "https://drive.google.com/file/d/11qXk6xLcB5pRNTLSFD32_dPLPz1yV3BR/view?usp=sharing");
+
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -363,7 +365,7 @@ class _HomePageState extends State<HomePage> {
                                         projectTitle: "Liberal International Hub",
                                         tech1: "Flutter",
                                         tech2: "Dart",
-                                        tech3: "Firebase",
+                                        tech3: "Firebase", isPublished: true,
                                       ),
 
 
@@ -375,7 +377,15 @@ class _HomePageState extends State<HomePage> {
                                         projectTitle: "ACMA",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "Firebase",
+                                        tech3: "Firebase", isPublished: true,
+                                      ),
+                                      FeatureProject(
+                                        imagePath: "images/project3.jpeg",
+                                        projectDesc:
+                                            "Flutter Image Picker App. We can pick multiple image from local storage and display it to the User",
+                                        projectTitle: "Flutter Image Picker",
+                                        tech1: "Dart",
+                                        tech2: "Flutter", isPublished: false,
                                       ),
 
 
