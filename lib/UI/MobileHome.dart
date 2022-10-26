@@ -48,8 +48,8 @@ class _MobileHomeState extends State<MobileHome> {
                   currentAccountPicture: CircleAvatar(
                     child: Icon(Icons.person),
                   ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
+                  accountName: Text("Manish Rajput"),
+                  accountEmail: Text("thisismanishrajput@gmail.com")),
               ListTile(
                 title: Text("Share"),
                 leading: Icon(Icons.share),
@@ -86,7 +86,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.08,
               ),
               CustomText(
-                text: "Hi, my name is",
+                text: "Hello!,I am ",
                 textsize: 16.0,
                 color: Color(0xff41FBDA),
                 letterSpacing: 3.0,
@@ -95,7 +95,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.02,
               ),
               CustomText(
-                text: "Tushar Nikam.",
+                text: "Manish Rajput.",
                 textsize: 52.0,
                 color: Color(0xffCCD6F6),
                 fontWeight: FontWeight.w900,
@@ -104,7 +104,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the Android and web.",
+                text: "I create Mobile app for both Android and IOS web also",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -117,7 +117,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Nashik, IN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
+                      "I'm a Mobile app developer for both Android and iOS.\nCurrently I am learning Data Science and how to integrate ML Model in Mobile apps",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -213,7 +213,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
+                            "Hello! I'm Manish, a Flutter Developer at Techtonic Enterprises Pvt. Ltd New Delhi\n\nI enjoy creating applications for both Android/iOS or anything in between. My goal is to always build products that provide better user experience\n\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -221,15 +221,7 @@ class _MobileHomeState extends State<MobileHome> {
                           ),
                           CustomText(
                             text:
-                                "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n",
-                            textsize: 16.0,
-                            color: Color(0xff828DAA),
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 0.75,
-                          ),
-                          CustomText(
-                            text:
-                                "Here are a few technologies I've been working with recently:\n\n",
+                            "Here are a few technologies I've been working with recently:\n\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -252,20 +244,18 @@ class _MobileHomeState extends State<MobileHome> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                technology(context, "Dart"),
-                                technology(context, "Flutter"),
-                                technology(context, "Firebase"),
-                                technology(context, "UI/UX (Adobe XD)"),
+                                technology(context, "Python"),
+                                technology(context, "C/C++, Java."),
+                                technology(context, "MYSQL"),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                technology(context, "C/C++"),
-                                technology(context, "HTML, & (S)Css"),
-                                technology(context, "MYSQL"),
-                                technology(context, "Java"),
+                                technology(context, "Dart"),
+                                technology(context, "Flutter"),
+                                technology(context, "Firebase"),
                               ],
                             ),
                           ],
@@ -280,46 +270,6 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.08,
               ),
 
-              //Image
-              Center(
-                child: Container(
-                  height: size.height * 0.6,
-                  width: size.width * 0.7,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 50,
-                        right: 20,
-                        left: 50.0,
-                        child: Card(
-                          color: Color(0xff61F9D5),
-                          child: Container(
-                            margin: EdgeInsets.all(2.75),
-                            height: size.height * 0.45,
-                            width: size.width * 0.66,
-                            color: Color(0xff0A192F),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        height: size.height * 0.5,
-                        width: size.width * 0.6,
-                        child: Image(
-                          fit: BoxFit.cover,
-                          image: AssetImage("images/pic1.jpeg"),
-                        ),
-                      ),
-                      Container(
-                        height: size.height * 0.5,
-                        width: size.width * 0.6,
-                        color: Color(0xff61F9D5).withOpacity(0.5),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              //Where I've Worked title
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -385,311 +335,6 @@ class _MobileHomeState extends State<MobileHome> {
                 ],
               ),
 
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic9.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic2.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic3.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic4.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic5.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic6.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic7.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic8.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic10.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic11.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic102.gif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic104.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic105.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic106.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic107.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic108.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic109.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic110.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic101.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic103.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic111.gif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic113.jfif"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic114.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic115.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic116.jfif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic117.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic118.jpeg"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic119.jpeg"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic120.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic121.png"),
-                    ),
-                  ),
-                ],
-              ),
 
               SizedBox(
                 height: size.height * 0.07,
@@ -787,7 +432,8 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://github.com/champ96k");
+                      method.launchURL("https://github.com/thisismanishrajput");
+
                     },
                   ),
                   IconButton(
@@ -798,7 +444,7 @@ class _MobileHomeState extends State<MobileHome> {
                     ),
                     onPressed: () {
                       method.launchURL(
-                          "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                          "https://www.linkedin.com/in/thisismanishrajput/");
                     },
                   ),
                   IconButton(
@@ -808,7 +454,7 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://twitter.com/champ_96k");
+                      method.launchURL("https://twitter.com/KalKaProgrammer");
                     },
                   ),
                   IconButton(
@@ -828,22 +474,6 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
-              //Footer
-              Container(
-                alignment: Alignment.center,
-                height: MediaQuery.of(context).size.height / 6,
-                width: MediaQuery.of(context).size.width,
-                //color: Colors.white,
-                child: Text(
-                  "Designed & Built by Tushar Nikam 💙 Flutter",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.4),
-                    letterSpacing: 1.75,
-                    fontSize: 14.0,
-                  ),
-                ),
-              ),
             ],
           ),
         ),

@@ -380,6 +380,19 @@ class _HomePageState extends State<HomePage> {
                                         tech3: "Firebase", isPublished: true,
                                       ),
                                       FeatureProject(
+                                        links: [
+                                          "https://github.com/thisismanishrajput/flutter-ecommerce"
+                                        ],
+                                        imagePath: "images/project4.jpeg",
+                                        projectDesc:
+                                        "Flutter Ecommerce Application is created using Flutter and Django as backend and hosted on AWS S3",
+                                        projectTitle: "Flutter Ecommerce",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        tech3: "Python Django",
+                                        isPublished: false,
+                                      ),
+                                      FeatureProject(
                                         imagePath: "images/project3.jpeg",
                                         projectDesc:
                                             "Flutter Image Picker App. We can pick multiple image from local storage and display it to the User",
@@ -503,24 +516,6 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
 
-                                    //Footer
-                                    // Container(
-                                    //   alignment: Alignment.center,
-                                    //   height:
-                                    //       MediaQuery.of(context).size.height /
-                                    //           6,
-                                    //   width: MediaQuery.of(context).size.width -
-                                    //       100,
-                                    //   //color: Colors.white,
-                                    //   child: Text(
-                                    //     "Designed & Built by Tushar Nikam 💙 Flutter",
-                                    //     style: TextStyle(
-                                    //       color: Colors.white.withOpacity(0.4),
-                                    //       letterSpacing: 1.75,
-                                    //       fontSize: 14.0,
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 ),
                               ),
