@@ -422,6 +422,8 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
+
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
