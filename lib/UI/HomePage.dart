@@ -383,6 +383,18 @@ class _HomePageState extends State<HomePage> {
                                         links: [
                                           "https://github.com/thisismanishrajput/flutter-ecommerce"
                                         ],
+                                        imagePath: "images/project5.jpeg",
+                                        projectDesc:
+                                        "YouTube Clone",
+                                        projectTitle: "Flutter Ecommerce",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        isPublished: false,
+                                      ),
+                                      FeatureProject(
+                                        links: [
+                                          "https://github.com/thisismanishrajput/flutter-ecommerce"
+                                        ],
                                         imagePath: "images/project4.jpeg",
                                         projectDesc:
                                         "Flutter Ecommerce Application is created using Flutter and Django as backend and hosted on AWS S3",
