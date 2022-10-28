@@ -135,9 +135,7 @@ class _MobileHomeState extends State<MobileHome> {
                   ),
                   child: MaterialButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => CarouselDemo()));
-                      // method.launchEmail();
+                      method.launchEmail();
                     },
                     hoverColor: Colors.green,
                     child: const Text(
