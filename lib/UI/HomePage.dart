@@ -142,11 +142,13 @@ class _HomePageState extends State<HomePage> {
                               color: Color(0xff0A192F),
                               borderRadius: BorderRadius.circular(6.0),
                             ),
-                            child: FlatButton(
-                              hoverColor: Color(0xFF3E0449),
-                              onPressed: () {
+                            child: InkWell(
+                              hoverColor:
+                              Color(0xff64FFDA).withOpacity(0.2),
+                              onTap: (){
                                 method.launchURL(
                                     "https://drive.google.com/file/d/11qXk6xLcB5pRNTLSFD32_dPLPz1yV3BR/view?usp=sharing");
+
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -363,7 +365,7 @@ class _HomePageState extends State<HomePage> {
                                         projectTitle: "Liberal International Hub",
                                         tech1: "Flutter",
                                         tech2: "Dart",
-                                        tech3: "Firebase",
+                                        tech3: "Firebase", isPublished: true,
                                       ),
 
 
@@ -375,7 +377,40 @@ class _HomePageState extends State<HomePage> {
                                         projectTitle: "ACMA",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "Firebase",
+                                        tech3: "Firebase", isPublished: true,
+                                      ),
+                                      FeatureProject(
+                                        links: [
+                                          "https://github.com/thisismanishrajput/flutter-ecommerce"
+                                        ],
+                                        imagePath: "images/project5.jpeg",
+                                        projectDesc:
+                                        "YouTube Clone",
+                                        projectTitle: "Flutter Ecommerce",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        isPublished: false,
+                                      ),
+                                      FeatureProject(
+                                        links: [
+                                          "https://github.com/thisismanishrajput/flutter-ecommerce"
+                                        ],
+                                        imagePath: "images/project4.jpeg",
+                                        projectDesc:
+                                        "Flutter Ecommerce Application is created using Flutter and Django as backend and hosted on AWS S3",
+                                        projectTitle: "Flutter Ecommerce",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        tech3: "Python Django",
+                                        isPublished: false,
+                                      ),
+                                      FeatureProject(
+                                        imagePath: "images/project3.jpeg",
+                                        projectDesc:
+                                            "Flutter Image Picker App. We can pick multiple image from local storage and display it to the User",
+                                        projectTitle: "Flutter Image Picker",
+                                        tech1: "Dart",
+                                        tech2: "Flutter", isPublished: false,
                                       ),
 
 
@@ -438,7 +473,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
-                                                "Although I'm currently Working as a Flutter Developer \nbut Currently I am looking for Job Transition in \nData Science",
+                                                "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white
@@ -493,24 +528,6 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
 
-                                    //Footer
-                                    // Container(
-                                    //   alignment: Alignment.center,
-                                    //   height:
-                                    //       MediaQuery.of(context).size.height /
-                                    //           6,
-                                    //   width: MediaQuery.of(context).size.width -
-                                    //       100,
-                                    //   //color: Colors.white,
-                                    //   child: Text(
-                                    //     "Designed & Built by Manish Rajput 💙 Flutter",
-                                    //     style: TextStyle(
-                                    //       color: Colors.white.withOpacity(0.4),
-                                    //       letterSpacing: 1.75,
-                                    //       fontSize: 14.0,
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 ),
                               ),

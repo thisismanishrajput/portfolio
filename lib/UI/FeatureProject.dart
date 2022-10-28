@@ -12,9 +12,11 @@ class FeatureProject extends StatelessWidget {
   final String? tech2;
   final String? tech3;
   final List? links;
+  final bool isPublished;
 
   FeatureProject(
       {this.imagePath,
+        required this.isPublished,
       this.projectDesc,
         this.links,
       this.projectTitle,
@@ -142,7 +144,6 @@ class FeatureProject extends StatelessWidget {
                   ),
                 ),
 
-                // Gitub Link
                 Positioned(
                   top: size.height * 0.42,
                   right: 10.0,
@@ -152,7 +153,7 @@ class FeatureProject extends StatelessWidget {
                         height: size.height * 0.08,
                         width: size.width * 0.25,
                         // color: Colors.indigo,
-                        child: Row(
+                        child:isPublished? Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             IconButton(
@@ -170,6 +171,15 @@ class FeatureProject extends StatelessWidget {
                               },
                             ),
                           ],
+                        ):  Align(
+                          alignment: Alignment.topRight,
+                          child: IconButton(
+                            icon: FaIcon(FontAwesomeIcons.github),
+                            color: Colors.white.withOpacity(0.3),
+                            onPressed: (){
+                              method.launchURL(links!.first);
+                            },
+                          ),
                         ),
                       ),
 
